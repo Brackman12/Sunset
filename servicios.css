@@ -1,0 +1,437 @@
+:root {
+  /* Colors */
+  --color-primary: black;
+  --color-secondary: darkturquoise;
+  --dark-variation: #243119;
+  --color-variation: #ACECA1;
+  --soft-variation: #C9F2C7;
+  --just-white: #FFF;
+  --soft-white: #FAF8F7;
+  --just-grey: #C7C7C7;
+  --warm-black: #282623;
+  /* Fonts */
+  --title-h1: 32rem;
+  --title-h2: 28rem;
+  --title-h3: 24rem;
+  --title-h4: 20rem;
+  --title-h5: 16rem;
+  --paragraphs: 14rem;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 6.25%;
+}
+body {
+  width: 100vw;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  width: inherit;
+  height: 7vh;
+  background-color: white;
+  border-bottom: 3px solid darkturquoise;
+  align-items: center;
+}
+.logo-container {
+  width: 60%;
+  padding-left: 30px;
+}
+.logo-container img {
+  height: 5vh;
+}
+header > nav {
+  display: flex;
+  width: 40%;
+  justify-items: flex-end;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+  transition: all 1s ease;
+  list-style: none;
+}
+header li {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+  line-height: normal;
+}
+header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline;
+  color: gray;
+  font-size: var(--paragraphs);
+}
+header a:hover {
+  transition: all 1s;
+  color: black;
+}
+header li:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid darkturquoise;
+}
+.icons img {
+  height: 3.5vh;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.main-view {
+  background-image: url('./assets/index/banquete2.jpg');
+  background-size: 100vw 53vh;
+  background-repeat: no-repeat;
+  width: 0 auto;
+  height: 53vh;
+  margin-bottom: 40px;
+}
+.main-view > div {
+  background-color: rgba(0,0,0, .5);
+  width: 100vw;
+  height: 53vh;
+  padding: 12vh 0 0 10%;
+  color: var(--just-white);
+}
+.main-view h1 {
+  font-size: 100rem;
+  line-height: 100rem;
+}
+.main-view p {
+  margin-top: 20px;
+  font-size: var(--title-h4);
+}
+
+.main__welcome {
+  display: flex;
+  width: 85vw;
+  margin: 20px auto;
+}
+.main__welcome img {
+  width: 32%;
+  height: 33vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.aboutUs {
+  display: flex;
+  width: 85vw;
+  margin: 20px auto 60px;
+  justify-content: space-between;
+}
+
+.aboutUs__component {
+  width: 30vw;
+  justify-content: space-between;
+  font-size: var(--paragraphs);
+}
+.component__middle{
+margin:0 45px;
+}
+
+.blueText {
+  text-transform: uppercase;
+  font-size: var(--title-h3);
+  text-align: center;
+  color: darkturquoise;
+}
+
+.component--align {
+  padding-top: 20px;
+  text-align: justify;
+}
+
+footer{
+  width: 100%;
+  height: 20vh;
+  border-top: 2px solid var(--color-secondary);
+  padding-top: 5vh;
+}
+footer section{
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy{
+  font-size: var(--paragraphs);
+  margin-left: 15vw;
+}
+.logo{
+  width: 10vw;
+  margin-left: 5vw;
+}
+
+footer nav {
+  display: flex;
+  width: 30vw;
+  justify-items: flex-end;
+  justify-content: space-between;
+  transition: all 1s ease;
+  list-style: none;
+  margin-right: 5vw;
+}
+footer li {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+  line-height: normal;
+}
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline;
+  color: gray;
+  font-size: var(--paragraphs);
+}
+footer a:hover{
+  transition: all 1s;
+  color: black;
+}
+footer li:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid darkturquoise;
+}
+.icon-footer img {
+  width: 2vw;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+
+
+@media screen and (max-width: 1124px){
+  .logo-container {
+    width: 20%;
+    padding-left: 20px;
+  }
+  header > nav {
+    position: absolute;
+    left: 48%;
+    width: 90%;
+    justify-items: flex-end;
+    justify-content: space-between;
+    justify-self: end;
+    /* margin-right: 10px; */
+    transition: all 1s ease;
+    list-style: none;
+  }
+  .main-view {
+    background-image: url('./assets/index/banquete2.jpg');
+    background-size: 100vw 45vh;
+    background-repeat: no-repeat;
+    width: 0 auto;
+    height: 45vh;
+    margin-bottom: 40px;
+  }
+  .main-view > div {
+    background-color: rgba(0,0,0, .5);
+    width: 100vw;
+    height: 45vh;
+    padding: 12vh 0 0 10%;
+    color: var(--just-white);
+  }
+  .main-view h1 {
+    font-size: 80rem;
+    line-height: 100rem;
+  }
+  .main-view p {
+    margin-top: 20px;
+    font-size: var(--title-h5);
+  }
+  .main__welcome img {
+    width: 32%;
+    height: 27vh;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .aboutUs__component {
+    width: 30vw;
+    justify-content: space-between;
+    font-size: 13rem;
+  }
+  .component__middle{
+  margin:0 35px;
+  }
+  .blueText {
+    text-transform: uppercase;
+    font-size: var(--title-h4);
+    text-align: center;
+    color: darkturquoise;
+  }
+.copy{
+    font-size: var(10rem);
+    margin-left: 5vw;
+    width: 35vw;
+  }
+  .logo{
+    width: 12vw;
+    margin-right: 5vw;
+  }
+
+  footer nav {
+    display: flex;
+    width: 40vw;
+    justify-items: flex-end;
+    justify-content: space-between;
+    transition: all 1s ease;
+    list-style: none;
+  }
+  footer li {
+    display:inline-block;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease;
+    line-height: normal;
+  }
+  footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline;
+    color: gray;
+    font-size: var(9rem);
+  }
+  .icon-footer img {
+    height: 3.5vh;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 780px){
+.logo-container {
+  width: 20%;
+  padding-left: 20px;
+}
+header > nav {
+  position: absolute;
+  left: 40%;
+  width: 80%;
+  justify-items: flex-end;
+  justify-content: space-between;
+  justify-self: end;
+  /* margin-right: 10px; */
+  transition: all 1s ease;
+  list-style: none;
+}
+header li {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease;
+  line-height: normal;
+}
+header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline;
+  color: gray;
+  font-size: 1.5vw;
+}
+.main-view {
+  background-image: url('./assets/index/banquete2.jpg');
+  background-size: 100vw 38vh;
+  background-repeat: no-repeat;
+  width: 0 auto;
+  height: 38vh;
+  margin-bottom: 40px;
+}
+.main-view > div {
+  background-color: rgba(0,0,0, .5);
+  width: 100vw;
+  height: 38vh;
+  padding: 12vh 0 0 10%;
+  color: var(--just-white);
+}
+.main-view h1 {
+  font-size: 60rem;
+  line-height: 80rem;
+}
+.main-view p {
+  margin-top: 15px;
+  font-size: var(--paragraphs);
+}
+.main__welcome img {
+  width: 32%;
+  height: 22vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.aboutUs {
+  display: flex;
+  width: 90vw;
+  margin: 20px auto 60px;
+  justify-content: space-between;
+}
+.aboutUs__component {
+  width: 30vw;
+  justify-content: space-between;
+  font-size: 12rem;
+}
+.component__middle{
+  margin:0 25px;
+  }
+.blueText {
+  text-transform: uppercase;
+  font-size: var(--title-h5);
+  text-align: center;
+  color: darkturquoise;
+}
+.copy{
+  font-size: var(10rem);
+  margin-left: 5vw;
+  width: 35vw;
+}
+.logo{
+  width: 12vw;
+  margin-right: 5vw;
+}
+footer nav {
+  display: flex;
+  width: 40vw;
+  justify-items: flex-end;
+  justify-content: space-between;
+  transition: all 1s ease;
+  list-style: none;
+  padding-left: 7vw;
+}
+footer li {
+  display:block;
+  margin-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+  line-height: normal;
+}
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline;
+  color: gray;
+  font-size: var(9rem);
+}
+.icon-footer img {
+  height: 3.5vh;
+  width: 3.5vw;
+}
+}
